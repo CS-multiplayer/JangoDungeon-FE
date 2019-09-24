@@ -7,6 +7,7 @@ function NavBar(props) {
     function toggleLogin() {
         if (onLog) {
             setOnLog(false)
+            props.setLocalKey()
         } else {
             setOnLog(true)
         }
@@ -14,13 +15,13 @@ function NavBar(props) {
     }
     function logout() {
         localStorage.removeItem('key')
-        setOnLog(true)
+        props.setLocalKey()
     }
 
     return (
         <div className="nav">
             {props.logedIn ? <button onClick={logout}> Logout</button> : <button onClick={toggleLogin}>{onLog ? 'Return' : 'Login'}</button>}
-            {onLog && <Login backendUrl={props.backendUrl} />}
+            {onLog && <Login backendUrl={props.backendUrl} toggleLogin={toggleLogin} />}
 
         </div>
     );

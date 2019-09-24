@@ -44,6 +44,8 @@ function Login(props) {
                 console.log(res.data)
                 localStorage.setItem('key', res.data.key)
             })
+        setTimeout(() => props.toggleLogin(), 500)
+
 
     }
 

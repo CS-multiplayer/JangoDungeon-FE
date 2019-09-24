@@ -14,12 +14,19 @@ function App() {
       setLogedIn(false)
     }
   })
+  function setLocalKey() {
+    if (localStorage.getItem('key')) {
+      setLogedIn(true)
+    } else {
+      setLogedIn(false)
+    }
+  }
   return (
     <div className="App">
+      <NavBar logedIn={logedIn} backendUrl={backendUrl} setLocalKey={setLocalKey} />
 
-      <NavBar logedIn={logedIn} backendUrl={backendUrl} />
+      <h2>Welcome to the Jango Rango Dungeon!</h2>
       <div className="container">
-        <h1>welcome to the Jango Rango Dungeon!</h1>
         <Game backendUrl={backendUrl} />
       </div>
 

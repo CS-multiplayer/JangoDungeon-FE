@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 function GameInfo() {
 
     return (
-        <React.Fragment>
+      <div className="info">
 
-
-        </React.Fragment>
+        Info 
+      </div>
     );
 }
 
