@@ -1,5 +1,10 @@
 @import 'GameInputs';
 
+* {
+  font-family: 'Muli', sans-serif;
+  font-weight: 200
+}
+
 .App {
   text-align: center;
   background: black;
@@ -26,7 +31,8 @@
 
 .left {
   grid-area: left;
-  background: blue;
+  background: #3E5C76
+
 }
 
 .right {
@@ -34,12 +40,12 @@
   grid-area: right;
 
   .info {
-    background: purple;
+    background: #4C2C72;
     height: 75%;
 
   }
   .inputs {
-    background: green;
+    background: #77867F;
     height: 25%;
   }
 }
