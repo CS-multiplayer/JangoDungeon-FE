@@ -11,7 +11,7 @@ function Home(props) {
     useEffect(() => {
         axios
             .post(`${props.backendUrl}/api/adv/init/`, {
-                Authorization: localStorage.getItem("key")
+                'Authorization': localStorage.getItem("key")
             })
     }, [])
 
