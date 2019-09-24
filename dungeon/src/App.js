@@ -9,10 +9,9 @@ function App() {
 
   return (
     <div className="App">
+      <h2>Welcome to the Jango Rango Dungeon!</h2>
 
-      {logedIn ? null : <Login />}
       <div className="container">
-        <h1>Welcome to the Jango Rango Dungeon!</h1>
         <Game backendUrl={backendUrl} />
       </div>
 

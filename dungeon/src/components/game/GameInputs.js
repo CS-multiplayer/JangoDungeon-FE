@@ -5,7 +5,7 @@ function GameInputs() {
     return (
         <div className="inputs">
           <i class="fas fa-arrow-up"></i>
-
+          Inputs
         </div>
     );
 }

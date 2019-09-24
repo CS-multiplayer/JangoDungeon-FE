@@ -2,13 +2,44 @@
 
 .App {
   text-align: center;
+  background: black;
+  color: white;
+  height: 100vh;
+  h2 {
+    padding: 0;
+    margin: 0
+  }
+}
 
+.container {
+  height: 90%;
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-areas:
+    "left left left left right"
+    "left left left left right"
+    "left left left left right"
+    "left left left left right"
+    ;
+}
+
+.left {
+  grid-area: left;
+  background: blue;
 }
 
 .right {
   background: red;
-}
+  grid-area: right;
 
-.left {
-  background: blue;
+  .info {
+    background: purple;
+    height: 75%;
+
+  }
+  .inputs {
+    background: green;
+    height: 25%;
+  }
 }

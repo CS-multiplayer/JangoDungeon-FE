@@ -5,7 +5,7 @@ function GameInfo() {
     return (
       <div className="info">
 
-
+        Info 
       </div>
     );
 }
