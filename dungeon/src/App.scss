@@ -1,4 +1,5 @@
 @import 'GameInputs';
+@import 'GameInfo';
 
 * {
   font-family: 'Muli', sans-serif;
@@ -38,14 +39,4 @@
 .right {
   background: red;
   grid-area: right;
-
-  .info {
-    background: #4C2C72;
-    height: 75%;
-
-  }
-  .inputs {
-    background: #77867F;
-    height: 25%;
-  }
 }
