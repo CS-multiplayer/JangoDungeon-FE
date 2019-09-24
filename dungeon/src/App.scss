@@ -2,4 +2,59 @@
   text-align: center;
   
 }
+button{
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  margin: 5px;
 
+}  
+button:hover{
+    color:black;
+    background: lightgray;
+}
+.login-back{
+  position: fixed;
+  width: 100vw;
+  height:100%;
+  opacity: .5;
+  background:black;
+
+}  
+.login-page{
+  // box-sizing: border-box;
+  width: 50%;
+  height: 600px;
+  margin: 50px 25%;
+  opacity: 1;
+  background: white;
+  border-radius: 20px;
+  position: fixed;
+  padding: 30px;
+  // down: 400px;
+  .login-inputs{
+    div{
+      width:60%;
+      display:flex;
+      margin: 15px auto;
+      flex-direction: column;
+      label{
+        margin: 10px 20px;
+        text-decoration: underline;
+        font-weight: bold;
+        align-self: flex-start;
+      }
+      input{
+        padding: 6px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+    }
+  }
+
+}
+.nav{
+  // position: absolute;
+  z-index: 100;
+}
