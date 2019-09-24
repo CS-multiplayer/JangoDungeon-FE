@@ -12,7 +12,7 @@ function App() {
 
       {logedIn ? null : <Login />}
       <div className="container">
-        <h1>welcome to the Jango Rango Dungeon!</h1>
+        <h1>Welcome to the Jango Rango Dungeon!</h1>
         <Game backendUrl={backendUrl} />
       </div>
 

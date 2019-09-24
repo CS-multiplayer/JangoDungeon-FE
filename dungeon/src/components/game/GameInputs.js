@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 function GameInputs() {
 
     return (
-        <React.Fragment>
+        <div className="inputs">
+          <i class="fas fa-arrow-up"></i>
 
-
-        </React.Fragment>
+        </div>
     );
 }
 
