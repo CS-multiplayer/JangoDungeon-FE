@@ -10,18 +10,37 @@ function Home(props) {
     const [currInfo, setCurrInfo] = useState()
 
     useEffect(() => {
-        let auth = `token ${localStorage.getItem("key")}`
-        let options = {
-            'Content-Type': 'application/json',
-            'Authorization': auth
+        const auth = `token ${localStorage.getItem("key")}`
+        const options = {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': auth
+            }
         }
         console.log(options)
         axios
-            .get(`${props.backendUrl}/api/adv/init/`, { headers: options })
+            .get(`${props.backendUrl}/api/adv/init/`, options)
             .then(res => {
                 setCurrInfo(res.data)
             })
     }, [props.logedIn, props.backendUrl])
+
+    function useMove(direction) {
+        const auth = `token ${localStorage.getItem("key")}`
+        const options = {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': auth
+            }
+        }
+        console.log(direction)
+        axios
+            .post(`${props.backendUrl}/api/adv/move/`, { direction }, options)
+            .then(res => {
+                setCurrInfo(res.data)
+            })
+    }
+
     console.log(currInfo)
     return (
 
@@ -31,7 +50,7 @@ function Home(props) {
             </div>
             <div className="right">
                 <Info currInfo={currInfo} />
-                <Inputs />
+                <Inputs useMove={useMove} />
             </div>
 
 
