@@ -40,8 +40,8 @@ function Login(props) {
             .post(`${endpoint}`, creds, { 'Content-Type': 'application/json' })
             .then(res => {
                 localStorage.setItem('key', res.data.key)
+                props.toggleLogin()
             })
-        setTimeout(() => props.toggleLogin(), 500)
 
 
     }
