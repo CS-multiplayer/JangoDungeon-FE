@@ -82,7 +82,7 @@ function Login(props) {
                     </div>
                     {isRegister &&
                         <div>
-                            <label>veryify password</label>
+                            <label>Verify password</label>
                             <input
                                 value={password1}
                                 onChange={handleChange}
