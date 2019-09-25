@@ -11,14 +11,14 @@ function Home(props) {
     useEffect(() => {
         axios
             .post(`${props.backendUrl}/api/adv/init/`, {
-                Authorization: localStorage.getItem("key")
+                'Authorization': localStorage.getItem("key")
             })
     }, [])
 
     return (
         <React.Fragment>
             <div className="left">
-                <h1>{player}</h1>
+                <h2>Map</h2>
                 <Map />
             </div>
             <div className="right">
