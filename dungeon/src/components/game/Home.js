@@ -18,7 +18,6 @@ function Home(props) {
     return (
         <React.Fragment>
             <div className="left">
-                <h2>Map</h2>
                 <Map />
             </div>
             <div className="right">

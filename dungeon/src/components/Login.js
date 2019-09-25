@@ -36,12 +36,9 @@ function Login(props) {
             endpoint = `${props.backendUrl}/api/login/`
             creds = { "username": username, "password": password }
         }
-        console.log(endpoint)
-        console.log(creds)
         axios
             .post(`${endpoint}`, creds, { 'Content-Type': 'application/json' })
             .then(res => {
-                console.log(res.data)
                 localStorage.setItem('key', res.data.key)
             })
         setTimeout(() => props.toggleLogin(), 500)
