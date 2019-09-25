@@ -1,9 +1,6 @@
+@import 'reset';
 @import 'GameInputs';
-
-* {
-  font-family: 'Muli', sans-serif;
-  font-weight: 200
-}
+@import 'GameInfo';
 
 .App {
   text-align: center;
@@ -11,8 +8,7 @@
   color: white;
   height: 100vh;
   h2 {
-    padding: 0;
-    margin: 0
+    font-size: 1.4rem;
   }
 }
 .container {
@@ -100,14 +96,4 @@ button:hover{
 .right {
   background: red;
   grid-area: right;
-
-  .info {
-    background: #4C2C72;
-    height: 75%;
-
-  }
-  .inputs {
-    background: #77867F;
-    height: 25%;
-  }
 }

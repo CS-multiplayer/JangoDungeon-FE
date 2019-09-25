@@ -1,0 +1,11 @@
+
+.info {
+  background: #4C2C72;
+  height: 75%;
+  padding: 10px;
+  .sections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

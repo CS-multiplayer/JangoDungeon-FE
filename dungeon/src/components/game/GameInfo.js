@@ -5,7 +5,13 @@ function GameInfo() {
     return (
       <div className="info">
 
-        Info 
+        <h2>
+          Room Info
+        </h2>
+        <div className="sections">
+          <p>Room Name</p>
+          <p>Room Description</p>
+        </div>
       </div>
     );
 }
