@@ -12,6 +12,11 @@ function GameInfo(props) {
       <div className="sections">
         <p className='title'>{props.currInfo && props.currInfo.title}</p>
         <p>{props.currInfo && props.currInfo.description}</p>
+
+        {props.currInfo && props.currInfo.players[0] ? <div className="players">
+          <p>Players in room: </p>
+          <p>{props.currInfo.players}</p>
+        </div> : null}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
   text-align: center;
   background: black;
   color: white;
-  height: 100vh;
+  height: 100%;
   h2 {
     font-size: 1.4rem;
   }
@@ -96,4 +96,5 @@ button:hover{
 .right {
   background: red;
   grid-area: right;
+  // width: 
 }
