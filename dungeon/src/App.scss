@@ -6,7 +6,7 @@
   text-align: center;
   background: black;
   color: white;
-  height: 100vh;
+  height: 100%;
   h2 {
     font-size: 1.4rem;
   }
@@ -89,11 +89,12 @@ button:hover{
 // body general styles =====================================
 .left {
   grid-area: left;
-  background: #3E5C76
+  background: black
 
 }
 
 .right {
   background: red;
   grid-area: right;
+  // width: 
 }

@@ -5,7 +5,7 @@ import NavBar from './components/NavBar.js';
 
 function App() {
   const [logedIn, setLogedIn] = useState(!!localStorage.getItem("key"))
-  const [backendUrl] = useState('https://lambda-mud-test.herokuapp.com')
+  const [backendUrl] = useState('https://jango-rango-dungeon.herokuapp.com')
 
   useEffect(() => {
     if (localStorage.getItem('key')) {
