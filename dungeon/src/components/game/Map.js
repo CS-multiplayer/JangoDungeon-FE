@@ -65,18 +65,18 @@ function Map(props) {
             // console.log(x)
             // console.log(x.id, x.e_to)
             let newClass = 'room';
-            let playerClass = 'player'
-            let pathClassS = 'path';
-            let pathClassW = 'path';
-            if (x.s_to > 0) pathClassS += ' south'
-            if (x.w_to > 0) pathClassW += ' west'
+            // let playerClass = 'player'
+            // let pathClassS = 'path';
+            // let pathClassW = 'path';
+            if (x.s_to > 0) newClass += ' south'
+            if (x.w_to > 0) newClass += ' west'
+            if (x.e_to > 0) newClass += ' east'
+            if (x.n_to > 0) newClass += ' north'
             if (x.id == props.playerID) {
-              playerClass += ' inroom'
-              if (x.s_to > 0) pathClassS += ' inroom'
-              if (x.w_to > 0) pathClassW += ' inroom'
+              newClass += ' inroom'
             }
             // console.log(newClass)
-            return <div id={j} className={`x-div ${newClass}`}><div className={pathClassS}></div><div className={pathClassW}></div><div className={playerClass}></div></div>
+            return <div id={j} className={`x-div ${newClass}`}></div>
 
           })
         }</div>))
